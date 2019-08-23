@@ -9,5 +9,47 @@
  */
 
 fun max1020(a: Int, b: Int): Int {
-    TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+
+    /* if(a in 10..20 && b in 10..20) {
+
+       if (a < b) {
+           return b
+       } else if (a > b) {
+           return b
+       }
+   }
+    else
+   {
+       return 0
+   }
+*/
+
+
+    if (a >= 10 && a <= 20 && b >= 10 && b <= 20)
+    {
+        if (a > b)
+        {
+            return a
+        }
+        else if (b > a)
+        {
+            return b
+        }
+        else if(a == b)
+        {
+            return a
+        }
+    }
+    else if (a >= 10 && a <= 20)
+    {
+        return a
+    }
+    else if (b >= 10 && b <= 20)
+    {
+        return b
+    }
+
+    return 0
+
 }
+

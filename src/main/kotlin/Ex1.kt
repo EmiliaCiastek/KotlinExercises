@@ -1,3 +1,4 @@
+
 /**
  * Warmup-1 - startHi
  * Given a string, return true if the string starts with "hi" and false otherwise.
@@ -8,5 +9,22 @@
  **/
 
 fun startHi(str: String): Boolean {
-    TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+
+    if(str.isEmpty())
+    {
+        return false
+    }
+    else if(str.length < 2)
+    {
+        return false
+    }
+    else if(str.substring(0,2) == "hi")
+    {
+        return true
+    }
+    else
+    {
+        return false
+    }
+
 }

@@ -8,5 +8,7 @@
  * helloName("X") → "Hello X!"
  **/
 
-fun helloName(name: String): String =
-    TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+fun helloName(name: String): String {
+
+    return "Hello $name!"
+}

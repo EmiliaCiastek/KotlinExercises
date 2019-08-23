@@ -10,5 +10,18 @@
  **/
 
 fun fizzString(str: String): String {
-    TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+
+    var wielkosc = str.length
+
+    if (str[wielkosc - 1] == 'b' && str[0] == 'f') {
+        return "FizzBuzz"
+    } else if (str[wielkosc - 1] == 'b') {
+        return "Buzz"
+    } else if (str[0] == 'f') {
+        return "Fizz"
+    }
+
+    return str
+
 }
+

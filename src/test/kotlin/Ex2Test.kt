@@ -34,4 +34,11 @@ class Ex2Test {
                 arguments(17, 16, 17)
             )
     }
+
+    @Test
+    fun test2()
+    {
+        assertThat(max1020(11, 11)).isEqualTo(11)
+    }
+
 }

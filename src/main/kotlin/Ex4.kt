@@ -9,5 +9,15 @@
  * firstLast6([13, 6, 1, 2, 3]) → false
  **/
 
-fun firstLast6(nums: Array<Int>): Boolean =
-    TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+fun firstLast6(nums: Array<Int>): Boolean {
+
+    var wielkosc = nums.size
+
+    if (nums[0] == 6 || nums[wielkosc - 1] == 6) {
+        return true
+    }
+    else {
+        return false
+
+    }
+}
