@@ -10,5 +10,15 @@ package array1
  */
 
 fun sum3(nums: Array<Int>): Int {
-    TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+
+    var sum = 0
+
+    for (element in nums){
+
+        sum = sum + element
+
+    }
+
+    return sum
+
 }

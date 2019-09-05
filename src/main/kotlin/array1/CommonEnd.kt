@@ -10,5 +10,17 @@ package array1
  */
 
 fun commonEnd(a: Array<Int>, b: Array<Int>): Boolean {
-    TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+
+    if(a[0] == b[0] || a[a.size - 1] == b[b.size - 1]){
+
+        return true
+
+    }
+    else{
+
+        return false
+
+    }
+
+
 }

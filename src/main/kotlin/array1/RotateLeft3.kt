@@ -10,5 +10,18 @@ package array1
  */
 
 fun rotateLeft3(nums: Array<Int>): Array<Int> {
-    TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+
+    var index_array: Int = 0
+
+    for (i in 1..nums.size - 1){
+
+        var zapisz = nums[index_array]
+        nums[index_array] = nums[index_array + 1]
+        nums[index_array + 1] = zapisz
+        index_array = index_array + 1
+
+    }
+
+    return nums
+
 }

@@ -10,5 +10,22 @@ package array1
  */
 
 fun sameFirstLast(nums: Array<Int>): Boolean {
-    TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+
+    if(nums.size == 0){
+
+        return false
+
+    }else {
+
+        if (nums[0] == nums[nums.size - 1]) {
+
+            return true
+
+        } else {
+
+            return false
+
+        }
+    }
+
 }
