@@ -12,5 +12,23 @@ package logic1
  */
 
 fun squirrelPlay(temp: Int, isSummer: Boolean): Boolean {
-    TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+
+    if (temp >= 60 && temp <= 90 && isSummer == false){
+
+        return true
+
+    }
+    else if (temp >= 60 && temp <= 100 && isSummer == true){
+
+        return true
+
+    }
+
+    else{
+
+        return false
+
+    }
+
+
 }

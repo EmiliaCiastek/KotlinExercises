@@ -12,5 +12,31 @@ package logic1
  */
 
 fun greenTicket(a: Int, b: Int, c: Int): Int {
-    TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+
+//    if (a != b && b != c && a != c){
+//
+//        return 0
+//
+//    } else if (a == b && b == c){
+//
+//        return 20
+//
+//    } else if (a == b || a == c || b == c){
+//
+//        return 10
+//
+//    }
+//    else{
+//
+//        return 0
+//
+//    }
+
+    when {
+        a != b && b != c && a != c -> return 0
+        a == b && b == c -> return 20
+        a == b || a == c || b == c -> return 10
+        else -> return -1
+    }
+
 }

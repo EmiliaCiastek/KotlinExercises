@@ -13,5 +13,23 @@ package logic1
  */
 
 fun teaParty(tea: Int, candy: Int): Int {
-    TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+
+    if (tea < 5 || candy < 5){
+
+        return 0
+
+    }
+    else if(tea >= 5 && candy >= 5 && tea >= 2 * candy || candy >= 2 * tea){
+
+        return 2
+
+    }
+    else if(tea >= 5 && candy >= 5){
+
+        return 1
+
+    }
+
+    return 0
+
 }

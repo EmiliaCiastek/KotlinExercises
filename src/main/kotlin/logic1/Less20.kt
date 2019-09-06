@@ -11,5 +11,16 @@ package logic1
  */
 
 fun less20(n: Int): Boolean {
-    TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+
+    if ((n + 1) % 20 == 0 || (n + 2) % 20 == 0){
+
+        return true
+
+    }
+    else{
+
+        return false
+
+    }
+
 }
