@@ -8,7 +8,7 @@ import org.junit.jupiter.params.provider.ValueSource
 class WithoutXTest {
 
     @ParameterizedTest
-    @ValueSource(strings = ["xx", "x", ""])
+    @ValueSource(strings = ["xx","x", ""])
     fun shouldReturnEmptyString(str: String) {
         assertThat(withoutX(str)).isEqualTo("")
     }

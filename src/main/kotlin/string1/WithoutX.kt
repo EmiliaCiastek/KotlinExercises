@@ -11,5 +11,38 @@ package string1
  */
 
 fun withoutX(str: String): String {
-    TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+
+    if (str.isEmpty()){
+
+        return str
+
+    }
+
+    if (str == "x"){
+
+        return ""
+
+    }
+
+    if (str.substring(0,1) == "x" && str.substring(str.length - 1, str.length) == "x"){
+
+        return str.substring(1,str.length - 1)
+
+    }
+    else if (str.substring(str.length - 1, str.length) == "x"){
+
+        return str.substring(0, str.length - 1)
+
+    }
+    else if (str.substring(0,1) == "x"){
+
+        return str.substring(1,str.length)
+
+    }
+    else{
+
+        return str
+
+    }
+
 }

@@ -11,5 +11,7 @@ package string1
  */
 
 fun withoutEnd(str: String): String {
-    TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+
+    return str.substring(1,str.length - 1)
+
 }

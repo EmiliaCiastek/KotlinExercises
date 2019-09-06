@@ -10,5 +10,16 @@ package string1
  */
 
 fun firstHalf(str: String): String {
-    TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+
+    if (str.isEmpty()){
+
+        return str
+
+    }
+    else {
+
+        return str.substring(0, str.length / 2)
+
+    }
+
 }

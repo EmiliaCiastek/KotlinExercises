@@ -12,5 +12,7 @@ package string1
  */
 
 fun makeOutWord(out: String, word: String): String {
-    TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+
+    return "${out.substring(0,2)}$word${out.substring(2,4)}"
+
 }
