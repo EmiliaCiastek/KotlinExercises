@@ -16,26 +16,39 @@ fun xyzThere(str: String): Boolean {
 
     for (element in str) {
 
-        if (element == "x") {
+        if (element == 'x') {
 
-            xyz = element.substring(counter, counter + 3)
+            xyz = str.substring(counter, counter + 3)
 
-            if (xyz == "xyz" /* && element[counter - 1] == "." || counter - 1 < 0 */) {
+            if (counter != 0) {
 
-                return false
+                if (xyz == "xyz" && str[counter - 1] == '.') {
+
+                    return false
+
+                } else {
+
+                    return true
+
+                }
 
             }
 
-            else {
+            else{
 
-                return true
+                if (xyz == "xyz") {
+
+                    return true
+
+                }
 
             }
-
         }
 
         counter = counter + 1
 
     }
+
+    return false
 
 }
