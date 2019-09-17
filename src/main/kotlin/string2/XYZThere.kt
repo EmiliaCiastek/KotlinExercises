@@ -10,5 +10,32 @@ package string2
  */
 
 fun xyzThere(str: String): Boolean {
-    TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+
+    var xyz: String
+    var counter: Int = 0
+
+    for (element in str) {
+
+        if (element == "x") {
+
+            xyz = element.substring(counter, counter + 3)
+
+            if (xyz == "xyz" /* && element[counter - 1] == "." || counter - 1 < 0 */) {
+
+                return false
+
+            }
+
+            else {
+
+                return true
+
+            }
+
+        }
+
+        counter = counter + 1
+
+    }
+
 }

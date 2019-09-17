@@ -11,5 +11,30 @@ package string2
  */
 
 fun prefixAgain(str: String, n: Int): Boolean {
-    TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+
+    var counter: Int = 0
+
+        for (element in str){
+
+            if (element == str[n - 1]){
+
+                counter = counter + 1
+
+            }
+
+        }
+
+    if (counter >=2){
+
+        return true
+
+    }
+    else{
+
+        return false
+
+    }
+
+
+
 }

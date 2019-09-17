@@ -10,5 +10,15 @@ package string2
  */
 
 fun doubleChar(str: String): String {
-    TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+
+    var word: String = ""
+
+    for (element in str){
+
+        word = word + element + element
+
+    }
+
+    return word
+
 }
