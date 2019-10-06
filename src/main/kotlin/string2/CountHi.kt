@@ -9,5 +9,26 @@ package string2
  */
 
 fun countHi(str: String): Int {
-    TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+
+    var counter: Int = 0
+    var timer: Int = 0
+
+        for(i in str){
+
+            if(i == 'h' && counter + 2 <= str.length){
+
+                if(str.substring(counter, counter + 2) == "hi"){
+
+                    timer = timer + 1
+
+                }
+
+            }
+
+            counter = counter + 1
+
+        }
+
+    return timer
+
 }
