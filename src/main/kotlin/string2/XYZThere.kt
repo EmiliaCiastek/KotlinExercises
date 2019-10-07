@@ -11,38 +11,44 @@ package string2
 
 fun xyzThere(str: String): Boolean {
 
-    var xyz: String
+    var xyz: String = ""
     var counter: Int = 0
+
 
     for (element in str) {
 
         if (element == 'x') {
 
-            xyz = str.substring(counter, counter + 3)
+            if (counter + 3 > str.length) {
 
-            if (counter != 0) {
+                return false
 
-                if (xyz == "xyz" && str[counter - 1] == '.') {
+            }
+            else {
+
+                xyz = str.substring(counter, counter + 3)
+
+
+                if (counter > 0) {
+
+                    if (xyz == "xyz" && str[counter - 1] != '.') {
+
+                        return true
+
+                    }
+                }
+                else if (xyz == "xyz") {
+
+                    return true
+
+                } else if (xyz != "xyz") {
 
                     return false
 
-                } else {
-
-                    return true
-
                 }
 
             }
 
-            else{
-
-                if (xyz == "xyz") {
-
-                    return true
-
-                }
-
-            }
         }
 
         counter = counter + 1
