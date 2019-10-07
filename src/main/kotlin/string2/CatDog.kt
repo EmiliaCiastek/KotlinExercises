@@ -10,5 +10,58 @@ package string2
  */
 
 fun catDog(str: String): Boolean {
-    TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+
+    var counter: Int = 0
+    var timer_cat: Int = 0
+    var timer_dog: Int = 0
+
+    for(i in str){
+
+        if(i == 'c' && counter + 3 <= str.length){
+
+            if(str.substring(counter, counter + 3) == "cat"){
+
+                timer_cat = timer_cat + 1
+
+            }
+
+        }
+
+        counter = counter + 1
+
+    }
+
+
+         counter = 0
+
+
+    for(i in str){
+
+        if(i == 'd' && counter + 3 <= str.length){
+
+            if(str.substring(counter, counter + 3) == "dog"){
+
+                timer_dog = timer_dog + 1
+
+            }
+
+        }
+
+        counter = counter + 1
+
+    }
+
+
+    if(timer_cat == timer_dog){
+
+        return true
+
+    }
+    else{
+
+        return false
+
+    }
+
+
 }
