@@ -13,22 +13,12 @@ package logic1
 
 fun squirrelPlay(temp: Int, isSummer: Boolean): Boolean {
 
-    if (temp >= 60 && temp <= 90 && isSummer == false){
+    return if (temp in 60..90 && !isSummer){
 
-        return true
-
-    }
-    else if (temp >= 60 && temp <= 100 && isSummer == true){
-
-        return true
+        true
 
     }
-
-    else{
-
-        return false
-
-    }
+    else temp in 60..100 && isSummer
 
 
 }

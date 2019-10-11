@@ -11,11 +11,11 @@
 
 fun fizzString(str: String): String {
 
-    var wielkosc = str.length
+    var size = str.length
 
-    if (str[wielkosc - 1] == 'b' && str[0] == 'f') {
+    if (str[size - 1] == 'b' && str[0] == 'f') {
         return "FizzBuzz"
-    } else if (str[wielkosc - 1] == 'b') {
+    } else if (str[size - 1] == 'b') {
         return "Buzz"
     } else if (str[0] == 'f') {
         return "Fizz"

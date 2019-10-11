@@ -12,8 +12,8 @@ package string2
 fun catDog(str: String): Boolean {
 
     var counter: Int = 0
-    var timer_cat: Int = 0
-    var timer_dog: Int = 0
+    var counterCat: Int = 0
+    var counterDog: Int = 0
 
     for(i in str){
 
@@ -21,47 +21,28 @@ fun catDog(str: String): Boolean {
 
             if(str.substring(counter, counter + 3) == "cat"){
 
-                timer_cat = timer_cat + 1
+                counterCat++
 
             }
 
         }
-
-        counter = counter + 1
-
-    }
-
-
-         counter = 0
-
-
-    for(i in str){
 
         if(i == 'd' && counter + 3 <= str.length){
 
             if(str.substring(counter, counter + 3) == "dog"){
 
-                timer_dog = timer_dog + 1
+                counterDog++
 
             }
 
         }
 
-        counter = counter + 1
+        counter++
 
     }
 
 
-    if(timer_cat == timer_dog){
-
-        return true
-
-    }
-    else{
-
-        return false
-
-    }
+    return counterCat == counterDog
 
 
 }

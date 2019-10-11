@@ -12,13 +12,15 @@ package array1
 fun sum3(nums: Array<Int>): Int {
 
     var sum = 0
+//
+//    for (element in nums){
+//
+//        sum = sum + element
+//
+//    }
+//
+//    return sum
 
-    for (element in nums){
-
-        sum = sum + element
-
-    }
-
-    return sum
+    return nums[0] + nums[1] + nums[2]
 
 }

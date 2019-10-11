@@ -12,15 +12,6 @@ package logic1
 
 fun less20(n: Int): Boolean {
 
-    if ((n + 1) % 20 == 0 || (n + 2) % 20 == 0){
-
-        return true
-
-    }
-    else{
-
-        return false
-
-    }
+    return (n + 1) % 20 == 0 || (n + 2) % 20 == 0
 
 }

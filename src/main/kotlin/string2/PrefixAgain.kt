@@ -12,29 +12,20 @@ package string2
 
 fun prefixAgain(str: String, n: Int): Boolean {
 
+    // do poprawyy!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
     var counter: Int = 0
 
         for (element in str){
 
             if (element == str[n - 1]){
 
-                counter = counter + 1
+                counter++
 
             }
 
         }
 
-    if (counter >=2){
-
-        return true
-
-    }
-    else{
-
-        return false
-
-    }
-
-
+    return counter >=2
 
 }

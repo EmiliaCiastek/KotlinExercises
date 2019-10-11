@@ -11,14 +11,14 @@ package string1
 
 fun firstHalf(str: String): String {
 
-    if (str.isEmpty()){
+    return if (str.isEmpty()){
 
-        return str
+        str
 
     }
     else {
 
-        return str.substring(0, str.length / 2)
+        str.substring(0, str.length / 2)
 
     }
 

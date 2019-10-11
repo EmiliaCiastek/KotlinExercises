@@ -24,7 +24,7 @@ fun withoutX(str: String): String {
 
     }
 
-    if (str.substring(0,1) == "x" && str.substring(str.length - 1, str.length) == "x"){
+    if (str[0] == 'x' && str[str.length - 1] == 'x'){
 
         return str.substring(1,str.length - 1)
 

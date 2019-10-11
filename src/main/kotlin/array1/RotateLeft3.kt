@@ -11,17 +11,21 @@ package array1
 
 fun rotateLeft3(nums: Array<Int>): Array<Int> {
 
-    var index_array: Int = 0
+//    var indexArray: Int = 0
+//
+//    for (i in 1..nums.size - 1){
+//
+//        val tmp = nums[indexArray]
+//        nums[indexArray] = nums[indexArray + 1]
+//        nums[indexArray + 1] = tmp
+//        indexArray += 1
+//
+//    }
+//
+//    return nums
 
-    for (i in 1..nums.size - 1){
 
-        var zapisz = nums[index_array]
-        nums[index_array] = nums[index_array + 1]
-        nums[index_array + 1] = zapisz
-        index_array = index_array + 1
+    return arrayOf(nums[1],nums[2], nums[0])
 
-    }
-
-    return nums
 
 }

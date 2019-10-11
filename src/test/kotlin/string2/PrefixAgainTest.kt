@@ -13,7 +13,9 @@ class PrefixAgainTest {
             "xyzxyxyxy, 3",
             "Hi12345Hi6789Hi10, 4",
             "a, 1",
-            "ab ,1"
+            "ab ,1",
+            "abcXXYac, 3"
+
         ]
     )
     fun shouldReturnFalse(str: String, n: Int) {

@@ -32,11 +32,11 @@ fun greenTicket(a: Int, b: Int, c: Int): Int {
 //
 //    }
 
-    when {
-        a != b && b != c && a != c -> return 0
-        a == b && b == c -> return 20
-        a == b || a == c || b == c -> return 10
-        else -> return -1
+    return when {
+        a != b && b != c && a != c -> 0
+        a == b && b == c -> 20
+        a == b || a == c || b == c -> 10
+        else -> -1
     }
 
 }

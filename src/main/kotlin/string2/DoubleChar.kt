@@ -15,7 +15,7 @@ fun doubleChar(str: String): String {
 
     for (element in str){
 
-        word = word + element + element
+        word+= "$element$element"
 
     }
 

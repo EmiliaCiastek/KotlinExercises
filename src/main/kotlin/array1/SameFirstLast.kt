@@ -11,21 +11,13 @@ package array1
 
 fun sameFirstLast(nums: Array<Int>): Boolean {
 
-    if(nums.size == 0){
+    return if(nums.isEmpty()){
 
-        return false
+        false
 
     }else {
 
-        if (nums[0] == nums[nums.size - 1]) {
-
-            return true
-
-        } else {
-
-            return false
-
-        }
+        nums[0] == nums[nums.size - 1]
     }
 
 }

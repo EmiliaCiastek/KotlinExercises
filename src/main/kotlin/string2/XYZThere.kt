@@ -51,7 +51,7 @@ fun xyzThere(str: String): Boolean {
 
         }
 
-        counter = counter + 1
+        counter++
 
     }
 

@@ -13,11 +13,5 @@ fun firstLast6(nums: Array<Int>): Boolean {
 
     var wielkosc = nums.size
 
-    if (nums[0] == 6 || nums[wielkosc - 1] == 6) {
-        return true
-    }
-    else {
-        return false
-
-    }
+    return nums[0] == 6 || nums[wielkosc - 1] == 6
 }
